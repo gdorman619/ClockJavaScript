@@ -21,6 +21,12 @@ function updateClock() {
     else if (current_hour < 10){
         hour_value.innerText = '0' + current_hour;
     }
+    else if (current_hour > 12 & current_hour < 22){
+        hour_value.innerText = '0' + (current_hour -12);
+    }
+    else if (current_hour > 21){
+        hour_value.innerText = current_hour -12;
+    }
     else{
         hour_value.innerText = current_hour;
     }
