@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,9 @@ body{
     height: 100vh;
     display: grid;
     place-items: center;
+    background: url('images/beach-g58d7f5c64_1920.jpg') no-repeat center;
+    background-size: cover;
+    font-family: 'Barlow', sans-serif;
 }
 
 .clock_wrapper{
@@ -15,34 +20,51 @@ body{
 }
 
 .title{
-    font-size: 2.5rem;
-    padding-bottom: .8em;
+    font-size: 1.2rem;
+    padding-bottom: .5em;
     text-align: center;
+    font-weight: 800;
+    color: rgb(19, 34, 29);
+    letter-spacing: .15em;
 }
 
 .clock_value_wrapper{
     display: flex;
     flex-direction: column;
+    width: 100px;
 }
 
- .value{
-    font-size: 2rem;
-    height: 7rem;
-    width: 7rem;
+ .clock_number_value{
+    font-size: 3rem;
     display: grid;
     place-items: center;
-    background-color: orange;
+    background-color: rgb(196, 115, 134);
+    color: white;
+    font-weight: 700;
  }
 
  .label{
-    background-color: gray;
+    background-color: rgb(67, 93, 110);
     text-align: center;
-    padding: .5em 0;
+    font-size: 1rem;
+    padding: .3em;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+ }
+
+ .ampm_value{
+    text-align: center;
+    background-color: rgb(67, 93, 110);
+    font-size: 1.4rem;
+    padding: .3em;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .03em;
  }
 
  .ampm_wrapper{
-    display: grid;
-    place-items: left;
-    align-items: flex-end;
-    width: 3.5em;
+    align-self: flex-end;
  }
